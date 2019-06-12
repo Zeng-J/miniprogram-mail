@@ -1,0 +1,51 @@
+<!--pages/reg/reg.wxml-->
+<view class='index-bg'>
+  <!-- 注册flex容器 -->
+  <view class='wx-reg-box'>
+    <view class='wx-reg-item'>
+      <view class='wx-reg-title'>
+        <text>绑定手机</text>
+      </view>
+
+      <!-- 表单 -->
+      <view class='wx-reg-form'>
+        <view>
+          <van-filed label="收信人" value="{{ usermobile }}" 
+          title-width="45px"
+          error-message="{{ usermobileError }}"
+          placeholder="请填写您的手机号" bindinput="usermobileInput"  />
+          <text class='wx-reg-tips'>通过您的手机号码收发邮件</text>
+        </view>
+        <view>
+          <van-filed label="验证码" placeholder="请输入验证码" 
+          error-message="{{ smsError }}"
+          value="{{ sms }}" bindinput="smsInput" 
+          title-width="45px"
+          use-button-slot>
+            <van-button slot="button" size='small' type='primary' bind:click="sendSms">发送验证码</van-button>
+          </van-filed>
+        </view>
+        <view>
+          <van-checkbox value="{{ checked }}" bindinput="checkInput">
+            <text>是否已阅读并同意</text>
+          </van-checkbox>
+        </view>
+      </view>
+      <view>
+        <van-button size='large' disabled='{{ disabled }}' bind:click="reg">绑定</van-button>
+      </view>
+      <view class='wx-ad'>
+        <image src='http://www.dengxin.net/wxapp20190606/images/ad.fw.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <van-tabbar active="{{ active }}" active-color="#f3ea12" bind:change="onChange">
+    <van-tabbar-item icon="star-o">写信</van-tabbar-item>
+    <van-tabbar-item icon="star-o" info="5">信籍</van-tabbar-item>
+    <van-tabbar-item icon="star-o" info="20">广场</van-tabbar-item>
+    <van-tabbar-item icon="star-o" dot>发现</van-tabbar-item>
+    <van-tabbar-item icon="user-o">我的</van-tabbar-item>
+  </van-tabbar>
+  <van-toast id="van-toast" />
+</view>

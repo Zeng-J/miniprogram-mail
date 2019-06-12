@@ -1,0 +1,13 @@
+/* pages/mine/mine.wxss */
+.wx-userlogo{
+  margin-top: 50rpx;
+}
+
+.wx-userlogo image{
+  width: 111px;
+  height: 111px;
+}
+
+.wx-about{
+  margin-top: 85rpx;
+}

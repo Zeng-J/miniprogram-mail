@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<view class='index-bg'>
+  <view>
+    <van-button type='danger' class='bt-t' bind:click="toPage0">写信给Ta</van-button>
+  </view>
+  <view>
+    <van-button type='danger' class='bt-b' bind:click='toPage1'>打开信箱</van-button>
+  </view>
+</view>

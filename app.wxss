@@ -1,0 +1,58 @@
+/**app.wxss**/
+page {
+  height: 100%;
+  font-size: 16px;
+  font-family: 'PingFang SC', Helvetica, 'STHeiti STXihei', 'Microsoft YaHei', Tohoma, Arial, sans-serif; 
+} 
+.index-bg{
+  background-image: url('http://www.dengxin.net/wxapp20190606/images/bg.fw.png');
+  background-size: 100% 100%;
+  height: 100%;
+  position: relative; 
+}
+
+.wx-font-min-w{
+  font-size: 16px;
+  color: #fff;
+}
+.wx-font-min{
+  font-size: 16px;
+  color: #000;
+}
+
+/* -----wx-box布局-start----- */
+.wx-reg-box{
+  display: flex;
+  /* background-color: #000; */
+  justify-content: center;
+  align-items: center;
+  height: 88%;
+}
+
+.wx-reg-item{
+  text-align: center;
+  padding: 40rpx;
+  height: 82%;
+  width: 80%;
+  background-color: #ce4622;
+  opacity: 0.8;
+  position: relative;
+}
+
+.wx-reg-title{
+  font-size: 22px;
+  color: #fff;
+}
+
+.wx-ad{
+  position: absolute;
+  bottom: 13rpx;
+  left: 6%;
+  width: 88%;
+  height: 50px;
+}
+.wx-ad image{
+  width: 100%;
+  height: 50px;
+}
+/* -----wx-box布局-end----- */

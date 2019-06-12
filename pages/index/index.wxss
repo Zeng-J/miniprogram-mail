@@ -1,0 +1,12 @@
+/* pages/index/index.wxss */
+.bt-t{
+  position: absolute;
+  left: 50rpx;
+  bottom: 280rpx;
+}
+
+.bt-b{
+  position: absolute;
+  left: 50rpx;
+  bottom: 140rpx;
+}

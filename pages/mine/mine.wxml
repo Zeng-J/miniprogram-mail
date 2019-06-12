@@ -1,0 +1,36 @@
+<!--pages/reg/reg.wxml-->
+<view class='index-bg'>
+  <!-- 注册flex容器 -->
+  <view class='wx-reg-box'>
+    <view class='wx-reg-item'>
+      <view class='wx-reg-title'>
+        <text>个人中心</text>
+      </view>
+
+      <view class='wx-userlogo'>
+        <image src='http://www.dengxin.net/wxapp20190606/images/userlogo.fw.png'></image>
+      </view>
+      <view>
+        <text class='wx-font-min-w'>某某</text>
+      </view>
+      <view>
+        <text class='wx-font-min-w'>{{ usermobile }}</text>
+      </view>
+      <view class='wx-about'>
+        <text class='wx-font-min-w'>了解小谷邮政</text>
+      </view>
+
+      <view class='wx-ad'>
+        <image src='http://www.dengxin.net/wxapp20190606/images/ad.fw.png'></image>
+      </view>
+    </view>
+  </view>
+
+  <van-tabbar active="{{ active }}" active-color="#f3ea12" bind:change="onChange">
+    <van-tabbar-item icon="star-o">写信</van-tabbar-item>
+    <van-tabbar-item icon="star-o" info="5">信籍</van-tabbar-item>
+    <van-tabbar-item icon="star-o" info="20">广场</van-tabbar-item>
+    <van-tabbar-item icon="star-o" dot>发现</van-tabbar-item>
+    <van-tabbar-item icon="user-o">我的</van-tabbar-item>
+  </van-tabbar>
+</view>

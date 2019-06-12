@@ -1,0 +1,15 @@
+/* pages/reg/reg.wxss */
+.wx-reg-form{
+  padding: 12rpx;
+  background-color: #ccc;
+  margin: 15rpx 0;
+}
+
+.wx-reg-form>view{
+  margin: 12rpx 0;
+}
+
+.wx-reg-tips{
+  color: #555;
+  font-size: 14px;
+}
