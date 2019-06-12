@@ -14,9 +14,9 @@ App({
     } else if (num === 1) {
       page = '/pages/myMail/myMail'
     } else if (num === 2) {
-      page = '/pages/myMail/myMail'
+      page = '/pages/public/public'
     } else if (num === 3) {
-      page = '/pages/myMail/myMail'
+      page = '/pages/discover/discover'
     } else if (num === 4) {
       page = '/pages/mine/mine'
     }

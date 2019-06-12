@@ -1,1 +1,4 @@
 /* pages/addMail/addMail.wxss */
+.wx-addMail-form view{
+  margin: 8rpx auto;
+}

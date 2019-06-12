@@ -6,6 +6,38 @@
       <view class='wx-reg-title'>
         <text>写信</text>
       </view>
+      <!-- 表单 -->
+      <view class='wx-addMail-form'>
+        <view>
+          <van-filed label="写信人" value="{{ userMobile }}" title-width="45px" error-message="{{ userMobileError }}" placeholder="请填写您的手机号" bindinput="userMobileInput" />
+          <text class='wx-reg-tips'>通过您的手机号码收发邮件</text>
+        </view>
+        <view>
+          <van-filed label="收信人" value="{{ taMobile }}" title-width="45px" error-message="{{ taMobileError }}" placeholder="请填写ta的手机号" bindinput="taMobileInput" />
+        </view>
+        <view>
+          <van-filed label="内容" value="{{ message }}" title-width="45px" error-message="{{ messageError }}" 
+          autosize placeholder="请输入您对ta想说的话" bindinput="messageInput" />
+        </view>
+        <view>
+          <van-checkbox value="{{ mobileVisible }}" bindinput="mobileVisibleInput">
+            <text>是否不让对方看您的手机号码</text>
+          </van-checkbox>
+        </view>
+        <view>
+          <van-filed label="验证码" placeholder="请输入验证码" error-message="{{ smsError }}" value="{{ sms }}" bindinput="smsInput" title-width="45px" use-button-slot>
+            <van-button slot="button" size='small' type='primary' bind:click="sendSms">发送验证码</van-button>
+          </van-filed>
+        </view>
+        <view>
+          <van-checkbox value="{{ checked }}" bindinput="checkInput">
+            <text>是否同意遵守个人隐私协议</text>
+          </van-checkbox>
+        </view>
+      </view>
+      <view>
+        <van-button size='large' disabled='{{ disabled }}' bind:click="send">发送</van-button>
+      </view>
     </view>
   </view>
 
@@ -16,4 +48,5 @@
     <van-tabbar-item icon="star-o" dot>发现</van-tabbar-item>
     <van-tabbar-item icon="user-o">我的</van-tabbar-item>
   </van-tabbar>
+  <van-toast id="van-toast" />
 </view>

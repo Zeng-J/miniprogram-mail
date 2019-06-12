@@ -4,7 +4,9 @@
     "pages/reg/reg",
     "pages/mine/mine",
     "pages/myMail/myMail",
-    "pages/addMail/addMail"
+    "pages/addMail/addMail",
+    "pages/public/public",
+    "pages/discover/discover"
   ],
   "usingComponents": {
     "van-button": "/vantweapp/button/index",

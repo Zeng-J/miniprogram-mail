@@ -1,1 +1,25 @@
 /* pages/myMail/myMail.wxss */
+.wx-email-box{
+  margin: 20rpx auto;
+  padding: 8rpx;
+  background: #eee;
+}
+.wx-email{
+  display: flex;
+  min-height: 150rpx;
+  border-bottom: 5px solid #ddd;  
+}
+
+.wx-email .wx-email-date{
+  background: #fff;
+  align-content: center;
+  margin: 18rpx;
+  padding: 12rpx;
+  color: red;
+}
+.wx-email .wx-email-date .wx-email-day{
+  font-weight: bold;
+}
+.wx-email .wx-email-content{
+  padding: 18rpx;
+}
